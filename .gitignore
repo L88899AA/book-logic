@@ -1,0 +1,29 @@
+data/
+__pycache__/
+.DS_Store
+
+# Private working data, archived prototypes, and rebuildable outputs
+/workspace/
+/archive/
+/.cache/
+
+# Local configuration and private first-book experiments
+/config.json
+/reports/
+/queries.json
+/evaluation_queries.json
+.env
+.env.*
+!.env.example
+.venv/
+dist/
+build/
+*.egg-info/
+/local-library/
+/my-library/
+/demo-library/
+/new-library/
+/booklogic.py
+/requirements.txt
+/tests/test_booklogic.py
+/build-check/

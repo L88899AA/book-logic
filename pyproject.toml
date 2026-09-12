@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "book-logic"
+version = "0.1.0"
+description = "Local, evidence-linked book processing for AI writing workflows"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = ["pypdf>=6.0,<7", "jsonschema>=4.20,<5"]
+
+[project.optional-dependencies]
+semantic = ["numpy>=1.26,<3", "sentence-transformers>=3,<6"]
+dev = ["build>=1,<2"]
+
+[project.scripts]
+book-logic = "book_logic.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+book_logic = ["schemas/*.json"]
+
+[tool.setuptools.data-files]
+"share/book-logic/skills/book-logic" = ["skills/book-logic/SKILL.md"]
+"share/book-logic/skills/book-logic/references" = ["skills/book-logic/references/runtime.md", "skills/book-logic/references/cards.md", "skills/book-logic/references/processing.md", "skills/book-logic/references/quality.md"]
+"share/book-logic" = ["processing-policy.json"]

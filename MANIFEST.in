@@ -1,0 +1,11 @@
+include README.md DIRECTORY.md LICENSE THIRD_PARTY.md processing-policy.json
+recursive-include src *.py *.json
+recursive-include skills *.md
+prune data
+prune reports
+prune tests
+prune .venv
+prune workspace
+prune archive
+prune .cache
+exclude config.json booklogic.py requirements.txt queries.json evaluation_queries.json

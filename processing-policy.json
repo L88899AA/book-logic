@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "models": {
+    "coordinator": "gpt-6-astra",
+    "unit": "gpt-5.6-luna",
+    "chapter": "gpt-6-astra",
+    "book": "gpt-6-astra",
+    "review": "gpt-6-astra"
+  },
+  "review_mode": "all",
+  "forbid_extractor_self_review": true,
+  "max_semantic_revisions": 2,
+  "model_fallback": "block"
+}

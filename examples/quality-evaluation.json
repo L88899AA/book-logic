@@ -1,0 +1,40 @@
+{
+  "purpose": "Human-calibrated semantic evaluation fixtures; no model scores claimed",
+  "cases": [
+    {
+      "id": "intent-not-outcome",
+      "source": "The council decided to help the port seek a loan. Negotiations were still pending at the end of the month.",
+      "candidate": "议会成功促成港口贷款。",
+      "expected": "reject",
+      "reason": "把争取贷款的决定升级成已完成结果，并遗漏谈判仍在进行。"
+    },
+    {
+      "id": "negation",
+      "source": "The new crane did not improve total delivery time because the exit gate remained congested.",
+      "candidate": "新吊机改善了整体交付速度。",
+      "expected": "reject",
+      "reason": "遗漏否定，并把局部设备能力与整体交付混淆。"
+    },
+    {
+      "id": "attribution",
+      "source": "The manager claimed the strike alone caused the delay. The report disputes this, citing earlier maintenance failures.",
+      "candidate": "报告认为延迟完全由罢工引起。",
+      "expected": "reject",
+      "reason": "将经理的主张错误归给持反对意见的报告作者。"
+    },
+    {
+      "id": "important-omission",
+      "source": "Traffic rose after the bridge opened. Yet journeys became slower because the new traffic overwhelmed the connecting road.",
+      "candidate": "大桥开放后，交通流量增加。",
+      "expected": "fact_supported_but_extraction_incomplete",
+      "reason": "单条事实正确，但漏掉流量增加导致连接道路拥堵这一关键机制。"
+    },
+    {
+      "id": "qualified-pass",
+      "source": "For refrigerated cargo only, the shortcut reduced travel time. Dry cargo still used the old road.",
+      "candidate": "捷径缩短了冷藏货物的运输时间；该结论不适用于仍走旧路的干货。",
+      "expected": "pass",
+      "reason": "事实、对象范围与限制均保留。"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {"query":"局部提速为何不能改善交付", "keywords":"crane gate delivery", "expected":"capacity"},
+  {"query":"What was the delivery bottleneck?", "keywords":"gate", "expected":"capacity"},
+  {"query":"How can success measures differ?", "keywords":"delivery crane", "expected":"capacity"},
+  {"query":"更快的设备一定没用吗", "keywords":"crane capacity", "expected":"capacity"},
+  {"query":"Which example distinguishes local and whole-route improvement?", "keywords":"capacity", "expected":"capacity"},
+  {"query":"客户和运营团队的指标差异", "keywords":"delivery", "expected":"capacity"},
+  {"query":"等待与卸货时间", "keywords":"crane gate", "expected":"capacity"},
+  {"query":"预算增加购买力反而下降", "keywords":"budget purchasing", "expected":"purchasing"},
+  {"query":"Which example has 100 and 120 tokens?", "keywords":"budget", "expected":"purchasing"},
+  {"query":"How many replacement parts could be purchased?", "keywords":"parts price", "expected":"purchasing"},
+  {"query":"名义金额和实际数量", "keywords":"purchasing budget", "expected":"purchasing"},
+  {"query":"为什么不能推广到所有成本", "keywords":"parts price", "expected":"purchasing"},
+  {"query":"A price rise from 10 to 15", "keywords":"price", "expected":"purchasing"},
+  {"query":"购买数量从十个减少到八个", "keywords":"budget parts", "expected":"purchasing"},
+  {"query":"保密是否必然使计划失败", "keywords":"confidentiality", "expected":"knowledge"},
+  {"query":"Whose operational knowledge was missing?", "keywords":"operators", "expected":"knowledge"},
+  {"query":"为什么漏掉了安全检查", "keywords":"inspection", "expected":"knowledge"},
+  {"query":"A timetable could not be followed", "keywords":"planning inspection", "expected":"knowledge"},
+  {"query":"在相同保密规则下如何修正计划", "keywords":"confidentiality operators", "expected":"knowledge"},
+  {"query":"夜班参与有什么作用", "keywords":"operators planning", "expected":"knowledge"}
+]
